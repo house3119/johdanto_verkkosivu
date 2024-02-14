@@ -1,0 +1,10 @@
+
+@media screen and (min-width: 1140px) {
+    .container-md {
+        max-width:960px;
+    }
+}
+
+.content-div {
+    border-top: 1px solid black;
+}
