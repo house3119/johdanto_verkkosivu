@@ -7,4 +7,10 @@
 
 .content-div {
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.footer-div {
+    background-color: #643233;
+    min-height: 18rem;
 }
