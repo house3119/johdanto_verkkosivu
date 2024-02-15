@@ -1,16 +1,24 @@
 
-@media screen and (min-width: 1140px) {
-    .container-md {
-        max-width:960px;
-    }
-}
-
 .content-div {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
 }
 
-.footer-div {
+footer {
     background-color: #643233;
-    min-height: 18rem;
+    min-height: 16rem;
+}
+
+footer div.col-6 {
+    color: peachpuff;
+}
+
+.nav-link:hover {
+    text-shadow: 1px 1px 5px lightcyan;
+}
+
+@media screen and (min-width: 1200px) {
+    .container-md {
+        max-width:960px;
+    }
 }
