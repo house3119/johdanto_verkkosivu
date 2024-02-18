@@ -1,20 +1,46 @@
 
+.ajv-text {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.ajv-h1 {
+    letter-spacing: -0.1rem;
+    line-height: 1.1;
+}
+
+.ajv-h2 {
+    line-height: 1.1;
+}
+
+.ajv-footer-text {
+    font-size: 0.9rem;
+}
+
 .content-div {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    min-height: calc(100vh - 56px - 16rem);
 }
 
 footer {
-    background-color: #643233;
+    background-color: #7e663f;
     min-height: 16rem;
 }
 
-footer div.col-6 {
+footer section.col {
     color: peachpuff;
 }
 
-.nav-link:hover {
-    text-shadow: 1px 1px 5px lightcyan;
+.nav-link:hover:not(.active) {
+    text-shadow: 1px 1px 15px peachpuff;
+
+}
+
+.section-img {
+    width: 80%;
+    display: block;
+    margin: auto;
 }
 
 @media screen and (min-width: 1200px) {
