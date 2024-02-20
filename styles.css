@@ -1,4 +1,29 @@
 
+
+
+
+
+
+
+/*@keyframes liiku {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 50%;
+    }
+}*/
+
+
+#button-laheta {
+    /*animation-name: liiku;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;*/
+    position: relative;
+    left: 1%
+}
+
+
 .active {
 
 }
@@ -48,7 +73,7 @@ footer section.col {
 }
 
 .section-img {
-    width: 80%;
+    width: 90%;
     display: block;
     margin: auto;
 }

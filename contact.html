@@ -24,7 +24,7 @@
 					<div class="collapse navbar-collapse" id="navbarNav">
 						<ul class="navbar-nav ms-auto">
 							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="./index.html">Etusivu</a>
+								<a class="nav-link" aria-current="page" href="./index.html">Etusivu</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link" href="#">CV</a>
@@ -33,7 +33,7 @@
 								<a class="nav-link" href="./projects.html">Projektit</a>
 							</li>
 							<li class="nav-item">
-								<a class="nav-link" href="./contact.html">Ota yhteyttä</a>
+								<a class="nav-link active" href="./contact.html">Ota yhteyttä</a>
 							</li>
 						</ul>
 					</div>
@@ -46,30 +46,25 @@
 				<div class="row">
 					<div class="col">
 						<h1 class="ubuntu-light ajv-h1 pb-3">
-							Lorem, ipsum.
+							Yhteydenottopyyntö
 						</h1>
 					</div>
 				</div>
 				<div class="row row-cols-1 row-cols-sm-2 ajv-text">
 					<section class="col">
-						<p>
-							Lorem, ipsum! dolor sit amet consectetur adipisicing elit. Libero aspernatur quis eligendi. At, ea veniam eius iure nostrum, et voluptates aperiam aliquam obcaecati consectetur facilis necessitatibus alias incidunt totam illum labore. Totam voluptate officiis molestiae possimus maiores, nesciunt quisquam natus mollitia inventore!
-						</p>
-						
-						<p>
-							Ducimus impedit voluptate corrupti veniam temporibus libero placeat sint, sed aliquid dignissimos, dolor, explicabo enim autem. Laborum autem expedita quae quod voluptas possimus officia eos ipsa quasi illo dolores 
-						</p>
+						<form>
+							<div class="form-group">
+								<!--<label for="input-nimi" class="pb-1">Nimi</label>-->
+								<input type="text" class="form-control mb-2" id="input-nimi" placeholder="Nimesi">
 
-						<form action="./projects.html">
-							<button class="btn btn-primary mt-2" type="submit">
-								Lorem, ipsum.
-							</button>
+								<input type="email" class="form-control mb-2" id="input-email" aria-describedby="emailHelp" 
+								placeholder="Sähköpostiosoite">
+
+								<textarea class="form-control mb-3" id="textarea-viesti" rows="6" placeholder="Viesti"></textarea>
+
+							</div>
+							<button type="submit" class="btn btn-primary" id="button-laheta" onmouseover="siirto(event)" style="position: relative; left: 0%;">Lähetä</button>
 						</form>
-
-					</section>
-
-					<section class="col py-5 py-sm-0">
-						<img class="section-img" src="./serious_cat_face1.png" alt="serious cat face">
 					</section>
 				</div>
 			</div>
@@ -113,6 +108,8 @@
 
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
 		</script>
+
+		<script src="./script.js"></script>
 
     </body> 
 </html>
