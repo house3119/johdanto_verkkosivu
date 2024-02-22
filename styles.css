@@ -5,23 +5,20 @@
 
 
 
-/*@keyframes liiku {
+@keyframes nosto1 {
     from {
-        left: 0%;
+        padding-top: 8px;
+        padding-bottom: 8px;
+
     }
     to {
-        left: 50%;
+        padding-top: 6px;
+        padding-bottom: 10px;
+
     }
-}*/
-
-
-#button-laheta {
-    /*animation-name: liiku;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;*/
-    position: relative;
-    left: 1%
 }
+
+
 
 
 .active {
@@ -38,7 +35,7 @@
 }
 
 .ajv-h1 {
-    letter-spacing: -0.1rem;
+    letter-spacing: -0.05rem;
     line-height: 1.1;
 }
 
@@ -49,6 +46,7 @@
 .ajv-footer-text {
     font-size: 0.9rem;
     line-height: 1.3;
+    padding-left: 1.5rem;
 }
 
 .content-div {
@@ -68,18 +66,47 @@ footer section.col {
 }
 
 .nav-link:hover:not(.active) {
-    text-shadow: 1px 1px 20px #ECB654;
-
+    /*text-shadow: 1px 1px 20px #ECB654;*/
+    animation-name: nosto1;
+    animation-fill-mode: forwards;
+    animation-duration: 500ms;
 }
 
-.section-img {
-    width: 90%;
+
+.section-img-center {
     display: block;
     margin: auto;
+}
+
+.section-img-left {
+    display: block;
+    margin-left: 0%;  
+}
+
+.section-img-right {
+    display: block;
+    float: right;
+}
+
+.mobile-display-div {
+    display: none;
 }
 
 @media screen and (min-width: 1200px) {
     .container-md {
         max-width:960px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .mobile-display-div {
+        display: block;
+    }
+    .desktop-display-div {
+        display: none;
+    }
+    .content-div {
+        width: 95%;
+        margin: auto;
     }
 }

@@ -1,24 +1,19 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-
+    console.log(window.innerWidth)
 })
-
 
 function pako(event) {
     event.target.removeAttribute('onmouseover');
-    /*if (document.getElementById('textarea-viesti').value === '') {
-        return
-    }*/
 
-    let arvonta = getRandomIntInclusive(0,10);
+    let arvonta = getRandomIntInclusive(0,5);
 
     if (arvonta === 0) {
-        poisNakyvista(event.target);
         interval = setInterval(poisNakyvista, 50, event.target)
 
         timeout = setTimeout(() => {
-            let uusiArvonta = getRandomIntInclusive(0,1);
-            if (uusiArvonta === 0) {
+            arvonta = getRandomIntInclusive(0,1);
+            if (arvonta === 1) {
                 event.target.style.left = '100%';
             } else {
                 event.target.style.left = '0%';
@@ -26,23 +21,23 @@ function pako(event) {
             
             interval = setInterval(takaisinNakyviin, 50, event.target)
             event.target.setAttribute('onmouseover', 'pako(event)');
+
         }, getRandomIntInclusive(1000,4000))
 
     } else {
         let sijainti = parseInt(event.target.style.left.slice(0,-1))
         let uusi_paikka;
+        
         if (sijainti < 50) {
-            uusi_paikka = getRandomIntInclusive(50,100)
+            uusi_paikka = getRandomIntInclusive5(50,100)
             if (uusi_paikka - sijainti < 10) {
                 uusi_paikka = sijainti + 10
             }
-            console.log(uusi_paikka)
         } else {
-            uusi_paikka = getRandomIntInclusive(0,50)
+            uusi_paikka = getRandomIntInclusive5(0,50)
             if (sijainti - uusi_paikka < 10) {
                 uusi_paikka = sijainti - 10
             }
-            console.log(uusi_paikka)
         }
     
         if (sijainti < 50) {
@@ -93,12 +88,11 @@ function takaisinNakyviin(button) {
     }  
 }
 
-
 function pysayta() {
     clearInterval(interval)
 }
 
-function getRandomIntInclusive(min, max) {
+function getRandomIntInclusive5(min, max) {
     const minCeiled = Math.ceil(min);
     const maxFloored = Math.floor(max);
     let x;
@@ -106,4 +100,10 @@ function getRandomIntInclusive(min, max) {
         x = Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
     }
     return x
+}
+
+function getRandomIntInclusive(min, max) {
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
 }
