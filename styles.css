@@ -145,3 +145,9 @@ footer section.col {
         width: 90%;
     }
 }
+
+@media screen and (min-width: 577px) {
+    .container-md {
+        width: 95%;
+    }
+}
