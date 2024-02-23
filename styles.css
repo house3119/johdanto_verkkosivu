@@ -25,6 +25,17 @@
 
 }
 
+.ajv-card {
+    background-color: rgb(251, 251, 251);
+    border-radius: 15px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.ajv-card-img {
+    box-shadow: 1px 1px 3px #888888;
+    border-radius: 4px;
+}
+
 .ajv-text {
     font-size: 1rem;
     line-height: 1.6;
@@ -52,7 +63,7 @@
 .content-div {
     border-top: 1px solid rgb(54, 57, 57);
     border-bottom: 1px solid rgb(54, 57, 57);
-    min-height: calc(100vh - 56px - 14rem);
+    min-height: calc(100vh - 56px - 16rem);
 }
 
 footer {
@@ -92,6 +103,24 @@ footer section.col {
     display: none;
 }
 
+.trademark {
+    height: 2rem;
+    text-align: center;
+    background-color: #F2CC82;
+}
+
+.width-65 {
+    width: 65%;
+}
+
+.width-75 {
+    width: 75%;
+}
+
+.width-90 {
+    width: 90%;
+}
+
 @media screen and (min-width: 1200px) {
     .container-md {
         max-width:960px;
@@ -105,8 +134,14 @@ footer section.col {
     .desktop-display-div {
         display: none;
     }
-    .content-div {
+    .row {
         width: 95%;
         margin: auto;
+    }
+    .width-65 {
+        width: 90%;
+    }
+    .width-75 {
+        width: 90%;
     }
 }
