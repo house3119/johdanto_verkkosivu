@@ -53,15 +53,17 @@
 							<div class="form-group">
 								<!--<label for="input-nimi" class="pb-1">Nimi</label>-->
 								<input type="text" class="form-control mb-2" id="input-nimi" placeholder="Nimesi">
-
 								<input type="email" class="form-control mb-2" id="input-email" aria-describedby="emailHelp" 
 								placeholder="Sähköpostiosoite">
-
 								<textarea class="form-control mb-3" id="textarea-viesti" rows="6" placeholder="Viesti"></textarea>
-								<button class="btn btn-primary" id="button-laheta" onmouseover="pako(event)" style="position: relative; left: 0%; opacity: 1.0;">Lähetä</button>
 							</div>
 						</form>
 					</section>
+				</div>
+				<div class="row">
+					<div class="col-9">
+						<button class="btn btn-primary" id="button-laheta" onmouseover="pako(event)" style="position: relative; left: 0%; opacity: 1.0;">Lähetä</button>
+					</div>
 				</div>
 			</div>
 		</main>
@@ -74,9 +76,9 @@
 							Sivut
 						</h6>
 						<ul class="ajv-footer-text">
-							<li>Etusivu</li>
-							<li>Projektit</li>
-							<li>Ota yhteyttä</li>
+							<li><a href="./index.html" class="footer-link">Etusivu</a></li>
+							<li><a href="./projects.html" class="footer-link">Projektit</a></li>
+							<li><a href="./contact.html" class="footer-link">Ota yhteyttä</a></li>
 						</ul>
 					</section>
 
@@ -85,13 +87,13 @@
 							Yhteystiedot
 						</h6>
 						<ul class="ajv-footer-text">
-							<li>Osoite</li>
-							<li>Email</li>
-							<li>Puh</li>
+							<li>Testikuja 35 A 1, 35035 Testilä</li>
+							<li>Email: testimail@testi.fi</li>
+							<li>Puh: 040 123 4567</li>
 						</ul>
 					</section>
 
-					<section class="col">
+					<section class="col pt-4 py-sm-0">
 						<h6 class="ajv-h2">
 							AJV Industries
 						</h6>
@@ -101,7 +103,7 @@
 		</footer>
 		<div class="trademark">
 			<small>
-				Copyright AJV
+				AJV &#169 2024
 			</small>
 		</div>
 

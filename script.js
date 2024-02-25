@@ -1,10 +1,23 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-    console.log(window.innerWidth)
+    
 })
+
+let counter = 0;
 
 function pako(event) {
     event.target.removeAttribute('onmouseover');
+    counter++;
+    if (counter === 5) {
+        event.target.innerHTML = '&#129300';
+    } else if (counter === 15) {
+        event.target.innerHTML = '&#128544';
+    } else if (counter === 25) {
+        event.target.innerHTML = '&#128545';
+    } else if (counter === 40) {
+        event.target.style.backgroundColor = 'OrangeRed';
+        event.target.style.border = '1px solid OrangeRed';
+    }
 
     let arvonta = getRandomIntInclusive(0,5);
 

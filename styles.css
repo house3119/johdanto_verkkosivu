@@ -55,14 +55,19 @@
 }
 
 .ajv-footer-text {
-    font-size: 0.9rem;
-    line-height: 1.3;
+    font-size: 0.8rem;
+    line-height: 1.4;
     padding-left: 1.5rem;
+
+}
+
+#button-laheta {
+    width: 75px;
 }
 
 .content-div {
     border-top: 1px solid rgb(54, 57, 57);
-    border-bottom: 1px solid rgb(54, 57, 57);
+    border-bottom: 1px solid ghostwhite;
     min-height: calc(100vh - 56px - 16rem);
 }
 
@@ -74,6 +79,16 @@ footer {
 
 footer section.col {
     color: rgb(54, 57, 57);
+}
+
+.footer-link {
+    text-decoration: none;
+    color: rgb(54, 57, 57);
+}
+
+.footer-link:hover {
+    color: black;
+    text-decoration: underline;
 }
 
 .nav-link:hover:not(.active) {
@@ -107,6 +122,8 @@ footer section.col {
     height: 2rem;
     text-align: center;
     background-color: #F2CC82;
+    font-size: 0.95rem;
+    color: rgb(54, 57, 57);
 }
 
 .width-65 {
