@@ -58,7 +58,7 @@
 
 .content-div {
     border-bottom: 1px solid ghostwhite;
-    border-top: 1px solid var(--dark-grey);
+    border-top: 1px solid rgb(154, 154, 154);
     min-height: calc(100vh - 56px - 16rem);
 }
 
@@ -83,8 +83,8 @@ footer section.col {
 
 .navbar-brand {
     /*border-image: linear-gradient(90deg, #f6b73c, #4d9f0c) 30;*/
-    border-image: linear-gradient(90deg, rgb(255, 191, 0), #FFFFFF) 10;
-    border-bottom-width: 2px;
+    border-image: linear-gradient(90deg, rgb(255, 191, 0), lightgreen, #FFFFFF) 10;
+    border-bottom-width: 1.8px;
     border-bottom-style: solid;
     padding-bottom: 0;
     margin-bottom: 5px;
