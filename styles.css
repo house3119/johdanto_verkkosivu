@@ -81,6 +81,15 @@ footer section.col {
     text-decoration: underline;
 }
 
+.navbar-brand {
+    /*border-image: linear-gradient(90deg, #f6b73c, #4d9f0c) 30;*/
+    border-image: linear-gradient(90deg, var(--orange), #FFFFFF) 10;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    padding-bottom: 0;
+    margin-bottom: 5px;
+}
+
 .nav-link:hover:not(.active) {
     animation-name: nosto1;
     animation-duration: 500ms;
