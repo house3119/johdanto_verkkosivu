@@ -28,6 +28,11 @@
     box-shadow: 1px 1px 3px var(--light-grey);
 }
 
+.ajv-footer-h {
+    font-size: 1rem;
+    line-height: 1.1;
+}
+
 .ajv-footer-text {
     font-size: 0.8rem;
     line-height: 1.4;
